@@ -1,0 +1,33 @@
+/* Reset body margins */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: #ececec;
+}
+
+#header {
+    height: 30vh;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+#header h1 {
+    font-size: 14rem;
+    font-weight: bold;
+    line-height: 0.8;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#main {
+    height: 70vh;
+}
