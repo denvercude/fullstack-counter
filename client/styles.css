@@ -78,16 +78,19 @@ body {
 }
 
 #main {
+    display: flex;
+    flex-direction: row;
     height: 70vh;
     overflow: hidden;
 }
 
 .infinity-container {
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width:33%;
 }
 
 .infinity-symbol {
@@ -107,4 +110,14 @@ body {
 
 .infinity-symbol:hover {
     transform: scale(0.90);
+}
+
+#left {
+    border: 1px solid black;
+    width: 33%;
+}
+
+#right {
+     border: 1px solid blue;
+     width: 33%
 }
