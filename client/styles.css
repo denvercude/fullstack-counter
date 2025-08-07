@@ -1,7 +1,54 @@
+/* Font Variables - SaaS Typography System */
+:root {
+    --font-brand: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-accent: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 /* Reset body margins */
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-links-left,
+.nav-links-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.nav-cta {
+    font-weight: 500;
+    color: #000;
 }
 
 .container{
@@ -20,14 +67,44 @@ body {
 }
 
 #header h1 {
+    font-family: var(--font-brand);
     font-size: 14rem;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 0.8;
     margin: 0;
     width: 100%;
     text-align: center;
+    letter-spacing: -0.02em;
 }
 
 #main {
     height: 70vh;
+    overflow: hidden;
+}
+
+.infinity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.infinity-symbol {
+    font-family: var(--font-accent);
+    font-size: 50rem;
+    font-weight: 600;
+    color: #d6fe6a;
+    transition: transform 0.3s ease;
+    text-shadow: 
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+    line-height: 0.4;
+    
+}
+
+.infinity-symbol:hover {
+    transform: scale(0.90);
 }
