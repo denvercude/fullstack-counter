@@ -35,6 +35,8 @@ app.use(session({
 }));
 app.use('/auth', authRoutes);
 
+app.use(express.static('client'));
+
 app.get('/count', requireAuth, async (req, res) => {
   try {
       const user = await User.findById(req.session.userId);
