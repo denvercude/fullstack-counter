@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Counter - Incremently</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="counterstyles.css">
 </head>
 <body>
     <div class="container">
+        <nav class="navbar">
+            <div class="nav-links-left">
+                <a href="index.html" class="nav-link">← Back to Home</a>
+            </div>
+            <div class="nav-links-right">
+                <span class="username-display" id="usernameDisplay"></span>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </nav>
+        
         <div class="counter-container">
-            <h1>Welcome to Your Counter</h1>
+            <div class="counter-header">
+                <h1>Your Counter</h1>
+                <p class="counter-subtitle">Click to increment!</p>
+            </div>
+            
             <div class="counter-display">
-                <span id="count">0</span>
+                <div class="count-number" id="countDisplay">0</div>
+                <div class="count-label">clicks</div>
             </div>
+            
             <div class="counter-controls">
-                <button id="incrementBtn">+</button>
-                <button id="decrementBtn">-</button>
-                <button id="resetBtn">Reset</button>
+                <button class="control-btn increment-btn" id="incrementBtn">+</button>
             </div>
-            <div class="user-info">
-                <p>Logged in as: <span id="username">User</span></p>
-                <button id="logoutBtn">Logout</button>
-            </div>
+            
         </div>
     </div>
 
