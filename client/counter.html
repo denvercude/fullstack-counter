@@ -27,16 +27,24 @@
                 <h1>Your Counter</h1>
                 <p class="counter-subtitle">Click to increment!</p>
             </div>
-            
-            <div class="counter-display">
-                <div class="count-number" id="countDisplay">0</div>
-                <div class="count-label">clicks</div>
+            <div id="counter-and-ai">
+                <div id="counter-and-controls">
+                    <div class="counter-display">
+                        <div class="count-number" id="countDisplay">0</div>
+                        <div class="count-label">clicks</div>
+                    </div>
+                    <div class="counter-controls">
+                        <button class="control-btn increment-btn" id="incrementBtn">+</button>
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <h3 class="ai-title">Advanced Click Analytics</h3>
+                    <div id="aiResponse" class="ai-response">
+                      <!-- server reply goes here -->
+                    </div>
+                    <button id="aiAssistBtn" class="ai-btn">Get AI assistance</button>
+                  </div>
             </div>
-            
-            <div class="counter-controls">
-                <button class="control-btn increment-btn" id="incrementBtn">+</button>
-            </div>
-            
         </div>
     </div>
 

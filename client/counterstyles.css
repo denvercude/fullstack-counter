@@ -106,7 +106,7 @@ body {
 }
 
 .counter-display {
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 2rem 0;
     padding: 2rem;
     background: white;
     border-radius: 20px;
@@ -167,4 +167,82 @@ body {
 
 .control-btn:active {
     transform: scale(0.9);
+}
+
+#counter-and-ai {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#counter-and-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+#counter-and-ai {
+    gap: 3rem;
+    align-items: flex-start;
+}
+  
+.ai-card {
+    width: 32%;
+    min-width: 300px;
+    background: #fff;
+    border: 3px solid #000;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 8px -4px #000;
+    padding: 1.25rem 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ai-title {
+    font-weight: 700;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.ai-btn {
+    all: unset;
+    width: 40%;
+    cursor: pointer;
+    background: #d6fe6a;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 6px -3px #000;
+}
+.ai-btn:hover { transform: translateY(1px); }
+.ai-btn:active { transform: translateY(2px); box-shadow: 4px -2px #000; }
+
+.ai-response {
+    border: 2px solid #000;
+    border-radius: 12px;
+    background: #fff;
+    padding: 0.9rem 1rem;
+    min-height: 3.1rem;
+    width: 80%;
+    line-height: 1.35;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
