@@ -1,5 +1,5 @@
 # Incremently
-Incremently is the world’s most advanced AI-powered counting platform. Users can press a button to increase a number by exactly one, accompanied by historical trivia and professional ai-powered “usage tips” for optimal counting.
+Incremently is the world’s most advanced AI-powered counting platform. Users can press a button to increase a number by exactly one, accompanied by historical trivia and professional “usage tips” for optimal counting.
 
 ## Inspiration
 Born from the vision of disrupting the number industry, Incremently aims to make counting both insightful and enterprise-ready.
