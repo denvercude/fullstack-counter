@@ -81,15 +81,12 @@ app.post('/ai-assistance', requireAuth, async (req, res) => {
     const prompt = `You are responding as part of a humorous "AI-powered" counting app. The app's only function is a button that increments the displayed number by 1.
     Your response must follow exactly this statement:
 
-    Provide a short (max 12 words), one sentence historical or cultural fact about the current number. It can be accurate or fictional, but must be delivered as if it is factual.
-
-    Provide a short, one sentence professional, sincere piece of advice for operating the counting app, keeping in mind it is an extremely simple application.
+    Provide one short, sincere, and overly buzzword-filled sentence giving professional advice on how to increment the counter from its current value to the next, using impressive-sounding but easily understandable tech jargon despite the app’s extreme simplicity.
 
     Format:
-    Cultural Significance: [Historical/cultural significance of the number]
-    AI tip: [Professional usage advice]
+    AI TIP: [Professional usage advice]
 
-    Current number: ${currentNumber}`;
+    The format is not to include this sentence or any subsequent sentences. Current number: ${currentNumber}`;
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4.1",

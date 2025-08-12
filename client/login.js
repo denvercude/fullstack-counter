@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (response.ok) {
                 const data = await response.json();
+
                 localStorage.setItem('username', data.username);
+
                 window.location.href = 'counter.html';
             } else {
                 const errorData = await response.json();
